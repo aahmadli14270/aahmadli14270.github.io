@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5%  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.main-container {
+  background-color: #23252c;
+  min-height: 60rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-content: center;
+  padding: 20rem;
+}
+.content-container {
+  max-width: 40%;
+  margin: 0 auto;
+
+  background-color: #000;
+  border-radius: 1rem;
+  border: solid 1px #fff;
+
+  display: grid;
+  direction: row;
+  grid-template-row: 1fr 1fr;
+  gap: 1.5rem;
+
+  justify-items: center;
+  align-content: center;
+}
+.image-main {
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.text-container p {
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+}
+
+.ADAmail {
+  margin-bottom: 1rem;
+}
+.text-container {
+  color: #f5f5f5;
+  text-align: center;
+  display: grid;
+  direction: column;
+  grid-template-column: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 1.5rem;
+  padding: 3rem;
+}
+.text-name {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: -3rem;
+}
+.faculty {
+  color: #f3bf99;
+  font-size: 1.6rem;
+  /* letter-spacing: -0.5px; */
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  gap: 3rem;
+  direction: column;
+  margin-bottom: 2rem;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+  background-color: #374151;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: -1px;
+}
+
+.btn-1,
+.btn-2 {
+  background-color: blue;
+  padding: 10px 5px;
+  width: 70%;
+  justify-self: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #f5f5f5;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+}
+.btn-1 {
+  background-color: #fff;
+  color: #000;
+  scale: 0.9;
+}
+.btn-2 {
+  background-color: #5093e2;
+  scale: 0.9;
+}
+
+.btn-txt-1:before {
+  content: "";
+  display: inline-block;
+  background: url("mail-outline.svg") no-repeat;
+
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+  transform: translate(25%, 25%);
+}
+
+.btn-txt-2:before {
+  content: "";
+  display: inline-block;
+  background: url("logo-linkedin.svg") no-repeat;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1.3rem;
+  transform: translate(50%, 25%);
+}
+.btn-txt-1 {
+  margin-right: 1rem;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.btn-txt-2 {
+  margin-right: 1rem;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.about-container {
+  text-align: left;
+  padding: 0;
+}
+
+.interest-container {
+  text-align: left;
+}
+.about-content,
+.interest-content {
+  font-size: 1.2rem;
+}
+.headc {
+  margin-bottom: 1rem;
+}
+.links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+  padding: 1rem 1rem;
+  background-color: rgba(85, 85, 85, 0.279);
+  justify-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link svg {
+  fill: #918e9b;
+  width: 3.2rem;
+}
