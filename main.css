@@ -245,6 +245,10 @@ section {
   position: sticky;
   top: 10rem;
 }
+
+.weatify {
+  width: 12rem;
+}
 .main-icon {
   justify-self: left;
 }
